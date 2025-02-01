@@ -36,7 +36,7 @@ public class BookingService {
     public Booking createBooking(Booking booking) {
         return bookingRepository.save(booking);
     }
-    public Optional<Booking> getBookingById(int id) {
+    public Optional<Booking> getById(int id) {
     	Optional<Booking> booking=bookingRepository.findById(id);
         return booking;
     }
