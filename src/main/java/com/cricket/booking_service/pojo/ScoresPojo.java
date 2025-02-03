@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ScoresPojo {
+	private int id;
     private int gameTotalOvers;
     private int strikerRuns;
     private int wideBall;

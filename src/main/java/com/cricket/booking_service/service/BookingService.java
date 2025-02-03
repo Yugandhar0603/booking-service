@@ -3,6 +3,8 @@ package com.cricket.booking_service.service;
 
 
 
+import java.time.LocalDate;
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -73,6 +75,9 @@ public class BookingService {
        
         bookingRepository.deleteById(id);
     }
+    public Booking getByBookingDate(LocalDate bookingDate) {
+    	return bookingRepository.findByBookingDate(bookingDate).orElse(null);
+    			}
 }
 //    // Team CRUD Operations
 //    public List<Team> getAllTeams() {
